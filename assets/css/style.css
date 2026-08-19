@@ -744,6 +744,23 @@ svg {
         grid-row: auto;
     }
 
+    .gallery-lightbox {
+        padding: calc(4rem + env(safe-area-inset-top)) 0.75rem calc(1rem + env(safe-area-inset-bottom));
+    }
+
+    .gallery-lightbox img {
+        max-width: 100%;
+        max-height: calc(100dvh - 5rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+        border-width: 2px;
+    }
+
+    .gallery-lightbox-close {
+        top: calc(0.75rem + env(safe-area-inset-top));
+        right: 0.75rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .footer {
         padding: 2rem 0;
         font-size: 0.9rem;
