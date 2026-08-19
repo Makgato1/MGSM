@@ -37,18 +37,18 @@
                 <div>
                     <h2 class="section-title text-left">Send an Inquiry</h2>
                     <p class="section-subtitle text-left section-subtitle-left">Fill out this quick form, and our driving instructors will call you back to lock down your booking date.</p>
-                    <form onsubmit="alert('Inquiry sent successfully! (This is a preview response)'); return false;">
+                    <form action="https://formspree.io/f/mjybjyze" method="POST">
                         <div class="form-group">
                             <label for="name">Your Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="e.g. Thabo Khumalo" required>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Thabo Khumalo" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="e.g. 082 123 4567" required>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. 082 123 4567" required>
                         </div>
                         <div class="form-group">
                             <label for="license">License Category Needed</label>
-                            <select id="license" class="form-control">
+                            <select id="license" name="license_category" class="form-control">
                                 <option value="8">Code 8 (Light Car)</option>
                                 <option value="10">Code 10 (Medium Truck)</option>
                                 <option value="14">Code 14 (Heavy Trailer)</option>
@@ -57,8 +57,9 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Additional Requirements or Pickup Location</label>
-                            <textarea id="message" class="form-control" rows="4" placeholder="Mention your pickup area or any timeline details..."></textarea>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Mention your pickup area or any timeline details..."></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="New MGSM lesson booking request">
                         <button type="submit" class="btn btn-block">Submit Lesson Booking Request</button>
                     </form>
                 </div>
