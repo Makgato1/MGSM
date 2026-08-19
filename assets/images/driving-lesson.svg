@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" role="img" aria-labelledby="title desc">
+  <title id="title">Driving lesson on an open road</title>
+  <desc id="desc">A simple illustrated road leading toward the horizon.</desc>
+  <rect width="1600" height="700" fill="#093152"/>
+  <rect y="390" width="1600" height="310" fill="#374151"/>
+  <path d="M0 700 610 390h380l610 310z" fill="#4b5563"/>
+  <path d="M760 700 790 550h20l30 150zM788 500l7-60h10l7 60z" fill="#dd2d31"/>
+  <path d="M0 390h1600" stroke="#dd2d31" stroke-width="8" opacity=".75"/>
+  <circle cx="800" cy="255" r="110" fill="#dd2d31" opacity=".9"/>
+  <path d="M0 390 420 245h210L0 455zM1600 390 1180 245H970l630 210z" fill="#093152" opacity=".8"/>
+</svg>

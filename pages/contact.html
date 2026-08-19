@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MGSM Driving School</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">MGSM <span>Driving School</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html" aria-current="page">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-compact">
+            <div class="container">
+                <h1>Book Your <span>First Lesson</span></h1>
+                <p>Get in touch directly with our team to arrange lesson schedules, pricing plans, or test truck availability.</p>
+            </div>
+        </section>
+
+        <section class="section section-bg">
+            <div class="container grid-2">
+                <div>
+                    <h2 class="section-title text-left">Send an Inquiry</h2>
+                    <p class="section-subtitle text-left section-subtitle-left">Fill out this quick form, and our driving instructors will call you back to lock down your booking date.</p>
+                    <form onsubmit="alert('Inquiry sent successfully! (This is a preview response)'); return false;">
+                        <div class="form-group">
+                            <label for="name">Your Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="e.g. Thabo Khumalo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="e.g. 082 123 4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="license">License Category Needed</label>
+                            <select id="license" class="form-control">
+                                <option value="8">Code 8 (Light Car)</option>
+                                <option value="10">Code 10 (Medium Truck)</option>
+                                <option value="14">Code 14 (Heavy Trailer)</option>
+                                <option value="learners">Learner's License Prep Only</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Requirements or Pickup Location</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Mention your pickup area or any timeline details..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Submit Lesson Booking Request</button>
+                    </form>
+                </div>
+                <div class="contact-info-block">
+                    <h3>Business Details</h3>
+                    <div class="contact-item">
+                        <strong>Main Service Hub</strong>
+                        <p>9th Avenue, Alexandra, Johannesburg, 2014</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Contact Numbers</strong>
+                        <p><a class="phone-link" href="tel:+27613813928">061 381 3928</a></p>
+                        <p><a class="phone-link" href="tel:+27794457445">079 445 7445</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Operational Coverage Areas</strong>
+                        <p>Alexandra, Sandton, Marlboro, Midrand, and surrounding Johannesburg North regions.</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Working Hours</strong>
+                        <p>Monday - Sunday: 06:00 AM - 06:00 PM</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Official Updates</strong>
+                        <a class="social-button" href="https://www.facebook.com/MGSMdrivingschool/" target="_blank" rel="noreferrer">Follow on Facebook</a>
+                    </div>
+                </div>
+                <div class="map-card">
+                    <h3>Find Our Service Hub</h3>
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps?q=9th+Avenue,+Alexandra,+Johannesburg,+2014,+South+Africa&output=embed"
+                            title="Live map showing MGSM Driving School at 9th Avenue, Alexandra, Johannesburg"
+                             loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=9th%20Avenue%2C%20Alexandra%2C%20Johannesburg%2C%202014%2C%20South%20Africa" target="_blank" rel="noreferrer">Open in Google Maps</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MGSM Driving School. Certified K53 Training in Alexandra &amp; Surrounding Johannesburg Areas.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
